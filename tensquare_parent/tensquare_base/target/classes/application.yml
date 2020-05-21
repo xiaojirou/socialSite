@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base  #微服务的应用名称，在使用SpringCloud后对微服务进行治理，不能有下划线
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.128:3306/tensquare_base?characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true #自动建表 根据实体类
+
