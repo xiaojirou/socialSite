@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07f8f795-b0aa-4e11-963c-1bbd53c04f3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/controller/RecruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/controller/RecruitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/dao/RecruitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/dao/RecruitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/EnterpriseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/EnterpriseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/RecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/RecruitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_parent/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tensquare_parent/target/" />
     <ignored path="$PROJECT_DIR$/tensquare_parent/tensquare_common/target/" />
     <ignored path="$PROJECT_DIR$/tensquare_parent/tensquare_base/target/" />
     <ignored path="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/target/" />
+    <ignored path="$PROJECT_DIR$/tensquare_parent/tensquare_qa/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +22,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensquare_parent/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -37,17 +34,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/controller/RecruitController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+            <state relative-caret-position="334">
+              <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/RecruitService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="119" column="74" lean-forward="true" selection-start-line="119" selection-start-column="74" selection-end-line="119" selection-end-column="74" />
+            <state relative-caret-position="172">
+              <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
               <folding>
                 <element signature="e#2139#2140#0" expanded="true" />
                 <element signature="e#2171#2172#0" expanded="true" />
@@ -96,7 +93,6 @@
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/service/LabelService.java" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_common/src/main/java/entity/PageResult.java" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/controller/LabelController.java" />
-        <option value="$PROJECT_DIR$/tensquare_parent/pom.xml" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/Application.java" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_common/src/main/java/entity/Result.java" />
@@ -105,6 +101,7 @@
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/controller/RecruitController.java" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/dao/RecruitDao.java" />
         <option value="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/RecruitService.java" />
+        <option value="$PROJECT_DIR$/tensquare_parent/pom.xml" />
       </list>
     </option>
   </component>
@@ -341,7 +338,7 @@
       <workItem from="1589438596850" duration="1908000" />
       <workItem from="1589538962880" duration="2128000" />
       <workItem from="1590024287096" duration="7618000" />
-      <workItem from="1590196352057" duration="4949000" />
+      <workItem from="1590196352057" duration="5723000" />
     </task>
     <task id="LOCAL-00001" summary="去掉idWorker多余的k">
       <created>1590035646396</created>
@@ -368,7 +365,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32393000" />
+    <option name="totallyTimeSpent" value="33167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -385,12 +382,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33002833" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40509915" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43342775" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33002833" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.16265912" />
@@ -598,20 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensquare_parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/controller/RecruitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/dao/RecruitDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -621,8 +604,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/service/RecruitService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="119" column="74" lean-forward="true" selection-start-line="119" selection-start-column="74" selection-end-line="119" selection-end-column="74" />
+        <state relative-caret-position="172">
+          <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
           <folding>
             <element signature="e#2139#2140#0" expanded="true" />
             <element signature="e#2171#2172#0" expanded="true" />
@@ -631,6 +614,20 @@
             <element signature="e#2412#2413#0" expanded="true" />
             <element signature="e#2478#2479#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/src/main/java/com/tensquare/recruit/controller/RecruitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensquare_parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
