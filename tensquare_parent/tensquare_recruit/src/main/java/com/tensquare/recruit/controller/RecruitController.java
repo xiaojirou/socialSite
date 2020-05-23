@@ -104,5 +104,23 @@ public class RecruitController {
 		recruitService.deleteById(id);
 		return new Result(true,StatusCode.OK,"删除成功");
 	}
+
+	/**
+	 * 查询推荐列表：state为2，按时间降序排序前4条记录
+	 */
+	@RequestMapping(value="/search/recommend",method= RequestMethod.GET)
+	public Result findRecommendList(){
+		List<Recruit> list = recruitService.findRecommendList();
+		return new Result(true,StatusCode.OK,"查询成功", list);
+	}
+
+	/**
+	 * 查询最新列表：state不为0，按时间降序排序前12条记录
+	 */
+	@RequestMapping(value="/search/newList",method= RequestMethod.GET)
+	public Result findNewList(){
+		List<Recruit> list = recruitService.findNewList();
+		return new Result(true,StatusCode.OK,"查询成功", list);
+	}
 	
 }

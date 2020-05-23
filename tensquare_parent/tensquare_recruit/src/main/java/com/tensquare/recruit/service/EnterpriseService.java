@@ -154,6 +154,10 @@ public class EnterpriseService {
                 if (searchMap.get("url")!=null && !"".equals(searchMap.get("url"))) {
                 	predicateList.add(cb.like(root.get("url").as(String.class), "%"+(String)searchMap.get("url")+"%"));
                 }
+				// ishot
+				if (searchMap.get("ishot")!=null && !"".equals(searchMap.get("ishot"))) {
+					predicateList.add(cb.equal(root.get("ishot").as(String.class), (String)searchMap.get("ishot")));
+				}
 				
 				return cb.and( predicateList.toArray(new Predicate[predicateList.size()]));
 

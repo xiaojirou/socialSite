@@ -107,6 +107,20 @@ public class RecruitService {
 	}
 
 	/**
+	 * 查询推荐列表：state为2，按时间降序排序前4条记录
+	 */
+	public List<Recruit> findRecommendList() {
+		return recruitDao.findTop4ByStateOrderByCreatetimeDesc("2");
+	}
+
+	/**
+	 * 查询最新列表：state不为0，按时间降序排序前12条记录
+	 */
+	public List<Recruit> findNewList() {
+		return recruitDao.findTop12ByStateIsNotOrderByCreatetimeDesc("0");
+	}
+
+	/**
 	 * 动态条件构建
 	 * @param searchMap
 	 * @return
