@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -103,6 +104,36 @@ public class ProblemController {
 	public Result delete(@PathVariable String id ){
 		problemService.deleteById(id);
 		return new Result(true,StatusCode.OK,"删除成功");
+	}
+
+	/**
+	 * 根据标签id查询最新的问答列表
+	 */
+	@RequestMapping(value="/newList/{labelId}/{page}/{size}",method= RequestMethod.GET)
+	public Result findNewList(@PathVariable String labelId, @PathVariable int page, @PathVariable int size ){
+		Page<Problem> problemPage = problemService.findNewListByLabelId(labelId, page, size);
+		PageResult<Problem> pageResult = new PageResult<>(problemPage.getTotalElements(), problemPage.getContent());
+		return new Result(true,StatusCode.OK,"查询成功", pageResult);
+	}
+
+	/**
+	 * 根据标签id查询热门问答列表
+	 */
+	@RequestMapping(value="/hotlist/{labelId}/{page}/{size}",method= RequestMethod.GET)
+	public Result findHotList(@PathVariable String labelId, @PathVariable int page, @PathVariable int size ){
+		Page<Problem> problemPage = problemService.findHotListByLabelId(labelId, page, size);
+		PageResult<Problem> pageResult = new PageResult<>(problemPage.getTotalElements(), problemPage.getContent());
+		return new Result(true,StatusCode.OK,"查询成功", pageResult);
+	}
+
+	/**
+	 * 根据标签id查询等待问答列表
+	 */
+	@RequestMapping(value="/waitlist/{labelId}/{page}/{size}",method= RequestMethod.GET)
+	public Result findWaitList(@PathVariable String labelId, @PathVariable int page, @PathVariable int size ){
+		Page<Problem> problemPage = problemService.findWaitListByLabelId(labelId, page, size);
+		PageResult<Problem> pageResult = new PageResult<>(problemPage.getTotalElements(), problemPage.getContent());
+		return new Result(true,StatusCode.OK,"查询成功", pageResult);
 	}
 	
 }
