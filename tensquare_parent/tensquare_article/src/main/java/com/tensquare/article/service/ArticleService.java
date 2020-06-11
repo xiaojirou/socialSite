@@ -1,6 +1,7 @@
 package com.tensquare.article.service;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -14,8 +15,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import org.springframework.transaction.annotation.Transactional;
 import util.IdWorker;
 
 import com.tensquare.article.dao.ArticleDao;
@@ -35,6 +38,9 @@ public class ArticleService {
 	
 	@Autowired
 	private IdWorker idWorker;
+
+	@Autowired
+	private RedisTemplate redisTemplate;
 
 	/**
 	 * 查询全部列表
@@ -75,7 +81,12 @@ public class ArticleService {
 	 * @return
 	 */
 	public Article findById(String id) {
-		return articleDao.findById(id).get();
+		Article article = (Article) redisTemplate.opsForValue().get("article_" + id);
+		if (article == null) {
+			article = articleDao.findById(id).get();
+			redisTemplate.opsForValue().set("article_" + id, article, 1, TimeUnit.DAYS);
+		}
+		return article;
 	}
 
 	/**
@@ -92,6 +103,7 @@ public class ArticleService {
 	 * @param article
 	 */
 	public void update(Article article) {
+		redisTemplate.delete("article_" + article.getId());
 		articleDao.save(article);
 	}
 
@@ -100,16 +112,26 @@ public class ArticleService {
 	 * @param id
 	 */
 	public void deleteById(String id) {
+		redisTemplate.delete("article_" + id);
 		articleDao.deleteById(id);
 	}
 
 	/**
 	 * 文章审核 state=1为审核通过
 	 */
+	@Transactional
 	public void examine(String id) {
 		Article article = articleDao.findById(id).get();
 		article.setState("1");
 		articleDao.save(article);
+	}
+
+	/**
+	 * 文章点赞
+	 */
+	@Transactional
+	public void updateThumbUp(String id) {
+		articleDao.updateThumbUp(id);
 	}
 
 	/**

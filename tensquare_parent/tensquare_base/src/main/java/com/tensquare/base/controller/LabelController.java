@@ -48,6 +48,12 @@ public class LabelController {
         return new Result(true, StatusCode.OK, "修改成功", null);
     }
 
+    @DeleteMapping("/{id}")
+    public Result delete(@PathVariable String id) {
+        labelService.deleteById(id);
+        return new Result(true, StatusCode.OK, "删除成功", null);
+    }
+
     @GetMapping("/toplist")
     public Result getTopList() {
         List<Label> list = labelService.getTopList();

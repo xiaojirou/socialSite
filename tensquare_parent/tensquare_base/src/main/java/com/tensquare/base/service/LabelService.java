@@ -3,6 +3,8 @@ package com.tensquare.base.service;
 import com.tensquare.base.dao.LabelDao;
 import com.tensquare.base.pojo.Label;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -37,10 +39,12 @@ public class LabelService {
         labelDao.deleteById(id);
     }
 
+    @CacheEvict(value = "label1", key = "#label.id")
     public void updateById(Label label) {
         labelDao.save(label);
     }
 
+    @Cacheable(value = "label1", key = "#id")
     public Label findById(String id) {
         return labelDao.findById(id).get();
     }

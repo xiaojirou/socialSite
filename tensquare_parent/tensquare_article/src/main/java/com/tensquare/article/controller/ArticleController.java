@@ -4,12 +4,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.tensquare.article.pojo.Article;
 import com.tensquare.article.service.ArticleService;
@@ -112,6 +107,15 @@ public class ArticleController {
 	public Result examine(@PathVariable String id ){
 		articleService.examine(id);
 		return new Result(true,StatusCode.OK,"审核成功");
+	}
+
+	/**
+	 * 文章点赞
+	 */
+	@PutMapping(value="/thumbUp/{articleId}")
+	public Result updateThumbUp(@PathVariable String articleId ){
+		articleService.updateThumbUp(articleId);
+		return new Result(true,StatusCode.OK,"点赞成功");
 	}
 	
 }
