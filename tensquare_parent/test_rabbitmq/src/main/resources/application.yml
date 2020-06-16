@@ -1,0 +1,6 @@
+server:
+  port: 8080
+spring:
+  rabbitmq:
+    addresses: 192.168.25.128
+    port: 5672

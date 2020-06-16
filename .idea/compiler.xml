@@ -11,6 +11,8 @@
         <module name="tensquare_common" />
         <module name="tensquare_qa" />
         <module name="tensquare_recruit" />
+        <module name="tensquire_spit" />
+        <module name="test_rabbitmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +22,8 @@
       <module name="tensquare_parent" target="1.8" />
       <module name="tensquare_qa" target="1.8" />
       <module name="tensquare_recruit" target="1.8" />
+      <module name="tensquire_spit" target="1.8" />
+      <module name="test_rabbitmq" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -29,6 +33,8 @@
       <module name="tensquare_common" options="-parameters" />
       <module name="tensquare_qa" options="-parameters" />
       <module name="tensquare_recruit" options="-parameters" />
+      <module name="tensquire_spit" options="-parameters" />
+      <module name="test_rabbitmq" options="-parameters" />
     </option>
   </component>
 </project>

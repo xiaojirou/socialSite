@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/tensquare_parent/tensquare_parent.iml" filepath="$PROJECT_DIR$/tensquare_parent/tensquare_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/tensquare_parent/tensquare_qa/tensquare_qa.iml" filepath="$PROJECT_DIR$/tensquare_parent/tensquare_qa/tensquare_qa.iml" />
       <module fileurl="file://$PROJECT_DIR$/tensquare_parent/tensquare_recruit/tensquare_recruit.iml" filepath="$PROJECT_DIR$/tensquare_parent/tensquare_recruit/tensquare_recruit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tensquare_parent/tensquire_spit/tensquire_spit.iml" filepath="$PROJECT_DIR$/tensquare_parent/tensquire_spit/tensquire_spit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tensquare_parent/test_rabbitmq/test_rabbitmq.iml" filepath="$PROJECT_DIR$/tensquare_parent/test_rabbitmq/test_rabbitmq.iml" />
     </modules>
   </component>
 </project>
